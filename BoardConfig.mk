@@ -158,10 +158,6 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/ashmemd_aidl_interface-cpp.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libashmemd_client.so
 
-# Use props from system instead from recovery build
-TW_OVERRIDE_SYSTEM_PROPS := \
-    "ro.build.product;ro.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
-
 # Nano 
 PB_INCLUDE_NANO := true
 PB_INCLUDE_NANO_EDITOR := true
